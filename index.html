@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Proctoring Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+</head>
+<body>
+  <!-- Candidate Info Navbar -->
+  <nav class="navbar">
+    <div class="navbar-content">
+      <h1>Candidate: John Doe</h1>
+      <p>Email: john.doe@example.com</p>
+      <p>Mobile: +91-9876543210</p>
+      <div class="navbar-actions">
+        <button onclick="toggleDarkMode()">🌗 Toggle Dark Mode</button>
+        <a href="resume.pdf" download class="resume-btn">📄 Download Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <section class="video-panel">
+      <div class="video-wrapper">
+        <video id="video" autoplay muted playsinline></video>
+        <canvas id="canvas"></canvas>
+      </div>
+
+      <textarea id="notes" placeholder="Interviewer notes..."></textarea>
+
+      <div class="button-group">
+        <button onclick="downloadRecording()">📹 Download Recording</button>
+        <button onclick="downloadReport()">📊 Download Report</button>
+      </div>
+
+      <div id="log" class="log"></div>
+    </section>
+  </main>
+
+  <!-- Pop-up Alerts -->
+  <div id="popup" class="popup hidden">
+    <p id="popup-text"></p>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="report.js"></script>
+</body>
+</html>
