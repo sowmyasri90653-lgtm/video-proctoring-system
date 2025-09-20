@@ -41,5 +41,18 @@ To ensure fairness and integrity during remote interviews by detecting suspiciou
 
 ---
 
+
+---
+
+## 🛠 Setup Instructions
+
+1. **Clone the repository**  
+   ```bash
+   
+   cd proctoring-dashboard
+2. Open in vs code
+3. Open index.html with live server extension
+4. Accept pop up to access webcam
+   
 ## 📁 Folder Structure
 
