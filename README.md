@@ -48,8 +48,7 @@ To ensure fairness and integrity during remote interviews by detecting suspiciou
 
 1. **Clone the repository**  
    ```bash
-   
-   cd proctoring-dashboard
+   https://github.com/sowmyasri90653-lgtm/video-proctoring-system.git
 2. Open in vs code
 3. Open index.html with live server extension
 4. Accept pop up to access webcam
